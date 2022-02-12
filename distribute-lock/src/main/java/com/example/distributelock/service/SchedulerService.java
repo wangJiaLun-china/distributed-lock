@@ -17,7 +17,7 @@ public class SchedulerService {
     public void sendSms(){
         try(RedisLock redisLock = new RedisLock(redisTemplate,"autoSms",30)) {
             if (redisLock.getLock()){
-                log.info("向138xxxxxxxx发送短信！");
+                log.info("向156xxxxxxxx发送短信！");
             }
         } catch (Exception e) {
             e.printStackTrace();
