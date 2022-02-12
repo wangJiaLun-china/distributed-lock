@@ -66,6 +66,10 @@ public class RedisLock implements AutoCloseable {
     }
 
 
+    /**
+     *  implements AutoCloseable 可以在try(){}方法执行后被调用此close方法
+     * @throws Exception
+     */
     @Override
     public void close() throws Exception {
         unLock();
