@@ -1,4 +1,4 @@
-package com.example.distributelock.controller;
+package com.example.distributelock;
 
 import lombok.extern.slf4j.Slf4j;
 import org.apache.curator.RetryPolicy;
